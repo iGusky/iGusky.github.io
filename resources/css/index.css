@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #F2E9E4;
+}
+
+body {
+  background-color: #22223A;
+}
+
+li {
+  list-style: none;
+}
