@@ -4,28 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gustavo Hernández</title>
-    <link rel="stylesheet" href="./resources/css/index.css" type="text/css"/>
     <link rel="stylesheet" href="./resources/css/normalize.css" type="text/css"/>
-  </head>
+    <link rel="stylesheet" href="./resources/css/index.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    
   <body>
     <nav>
-      <ul>
-        <li>
-          <a href="#aboutme">Sobre mi</a>
+      <ul class="nav-container">
+        <li class="nav-item">
+          <button class="nav-link" onclick="javascript: scrollToAboutMe()">
+            Sobre mi
+          </button>
+  
         </li>
-        <li>
-          <a href="#job">Trabajo</a>
+        <li class="nav-item">
+          <button class="nav-link" onclick="javascript: scrollToJob()">Trabajo</button>
         </li>
-        <li>
-          <a href="#contact">Contáctame</a>
+        <li class="nav-item">
+          <button class="nav-link" onclick="javascript: scrollToContact()">Contáctame</button>
         </li>
-      </ul>
+      </ul class="nav-container">
     </nav>
     <main>
-      <h1>Gustavo Hernández</h1>
-      <h2>Frontend developer</h2>
+      <div class="title">
+        <h1>Gustavo Hernández</h1>
+        <h2>Desarrollador Frontend</h2>
+      </div>
+      
       <p>Me gusta construir cosas en la web</p>
-
       <h3 id="aboutme">Sobre mi</h3>
       <p>
         Soy un apasionado por el diseño, me gusta ofrecer una experienca agradable para los usuarios.
@@ -39,8 +49,8 @@
       <p>Me encuentro disponible para trabajo como freelance o por contrato.</p>
 
       <h3 id="contact">Contacto</h3>
-      <p>Puedes contactarme de las siguientes formas</p>
-      <ul>
+      <p>Puedes contactarme en algunas de mis redes sociales</p>
+      <ul class="social">
         <li>
           <a href="https://github.com/iGusky" target="_blank">
             <img
@@ -68,4 +78,5 @@
       </ul>
     </main>
   </body>
+  <script src="./resources/js/index.js"></script>
 </html>
